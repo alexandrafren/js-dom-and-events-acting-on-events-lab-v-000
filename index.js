@@ -11,7 +11,7 @@ function retrieveEmployeeInformation(){
 }
 
 function addNewElementAsLi(){
-  var empname = document.createElement('li');
+  var empname = document.createElement('LI');
   empname.innerHTML = retrieveEmployeeInformation;
   document.body.main.ul.appendChild(empname);
 }
