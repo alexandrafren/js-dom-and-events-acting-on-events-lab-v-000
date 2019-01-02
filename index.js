@@ -24,6 +24,8 @@ function addNewLiOnClick(){
 function clearEmployeeListOnLinkClick(){
   document.querySelector('a').addEventListener('click', function(){
     y = document.qetElementsByClassName("employee-list")
-    
+    y.forEach(function(element){
+      y.removeChild(element);
+    })
   } )
 }
