@@ -15,3 +15,7 @@ function addNewElementAsLi(){
   empname.innerHTML = retrieveEmployeeInformation();
   document.getElementsByClassName("employee-list").appendChild(empname);
 }
+
+function addNewLiOnClick(){
+  
+}
