@@ -23,9 +23,9 @@ function addNewLiOnClick(){
 
 function clearEmployeeListOnLinkClick(){
   document.querySelector('a').addEventListener('click', function(){
-    y = document.getElementsByClassName("employee-list")
-    y.forEach(function(element){
-      y.removeChild(element);
-    })
+    y = document.getElementsByClassName("employee-list")[0];
+    while (y.firstChild) {
+      y.removeChild('LI');
+    }
   } )
 }
