@@ -12,6 +12,7 @@ function retrieveEmployeeInformation(){
 
 function addNewElementAsLi(){
   var empname = document.createElement('LI');
-  empname.innerHTML = retrieveEmployeeInformation;
+  var text = document.createTextNode(retrieveEmployeeInformation);
+  empname.appendChild(text);
   document.getElementsByClassName("employee-list").appendChild(empname);
 }
