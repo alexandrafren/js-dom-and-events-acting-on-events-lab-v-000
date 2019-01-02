@@ -7,5 +7,11 @@ function preventRefreshOnSubmit(){
 preventRefreshOnSubmit()
 
 function retrieveEmployeeInformation(){
-  return document.querySelector('input').value
+  return document.querySelector('input').value;
+}
+
+function addNewElementAsLi(){
+  var empname = document.createElement('li');
+  empname.innerHTML = retrieveEmployeeInformation;
+  document.body.appendChild(empname);
 }
