@@ -13,7 +13,7 @@ function retrieveEmployeeInformation(){
 function addNewElementAsLi(){
   var empname = document.createElement('LI');
   empname.innerHTML = retrieveEmployeeInformation();
-  document.getElementsByClassName("employee-list").lastChil.appendChild(empname);
+  document.getElementsByClassName("employee-list")[0].appendChild(empname);
 }
 
 function addNewLiOnClick(){
