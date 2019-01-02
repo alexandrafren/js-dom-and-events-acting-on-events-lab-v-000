@@ -20,3 +20,10 @@ function addNewLiOnClick(){
   document.querySelector('form').addEventListener('submit', addNewElementAsLi());
   document.querySelector("input").value = "";
 }
+
+function clearEmployeeListOnLinkClick(){
+  document.querySelector('a').addEventListener('click', function(){
+    y = document.qetElementsByClassName("employee-list")
+    
+  } )
+}
